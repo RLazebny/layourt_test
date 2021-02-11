@@ -1,18 +1,246 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Gulp Boilerplate</title>
-	<meta name="description" content="Gulp Boilerplate">
-	<!--Favicons BEGIN-->
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
-	<!--Favicons END-->
-	<link href="styles/index.css" rel="stylesheet" type="text/css" media="all">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8">
+    <title>Gulp Boilerplate</title>
+    <meta name="description" content="Gulp Boilerplate">
+    <!--Favicons BEGIN-->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <!--Favicons END-->
+    <link href="styles/index.css" rel="stylesheet" type="text/css" media="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 <body>
-	Hello world! :)
-	<script src="./js/index.js"></script>
+<div class="header">
+    <div class="header__logo">
+        <img class="header__logo-img" src="assets/images/logo-icon.png" height="31" alt="logo-icon">
+        <span class="header__logo-name">Pest Radar</span>
+    </div>
+    <div class="header__right-toolbar-wrapper">
+        <input type="text" class="header__search-input" placeholder="Search">
+        <span class="header__user-name">
+            Astarta Company
+        </span>
+        <button class="header__logout-btn">
+            Log out
+        </button>
+    </div>
+</div>
+<div class="main_content_wrapper">
+    <div class="menu">
+        <ul class="menu__list">
+            <li class="menu__list-item">
+                <h2>Dashboard</h2>
+            </li>
+            <li class="menu__list-item">
+                <h2>Events</h2>
+            </li>
+            <li class="menu__list-item">
+                <h2>Modules</h2>
+            </li>
+            <li class="menu__list-item">
+                <h2>Settings</h2>
+            </li>
+        </ul>
+        <div class="menu__support">
+            <span class="menu__support-text">Support</span>
+        </div>
+    </div>
+    <div class="main_content">
+        <div class="pest_list_wrapper">
+            <table class="pest_list">
+                <tr class="pest_list__list-header">
+                    <td>
+                        <div class="pest_list__item-wrapper pest_list__table-location">
+                            <input type="checkbox" id="check-top" name="check" checked>
+                            <label for="check-top" class="sorting">Location</label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="pest_list__item-wrapper pest_list__table-time">
+                            <span class="sorting">Data and time</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="pest_list__item-wrapper">
+                            Event
+                        </div>
+                    </td>
+                    <td>
+                        <div class="pest_list__item-wrapper pest_list__table-video">
+                            Videos
+                        </div>
+                    </td>
+                    <td>
+                        <div class="pest_list__item-wrapper pest_list__table-source">
+                            Source
+                        </div>
+                    </td>
+                    <td>
+                        <div class="pest_list__item-wrapper pest_list__table-tag">
+                            Tags
+                        </div>
+                    </td>
+                </tr>
+                <tr class="pest__list-item">
+                    <td class="pest__table-location">
+                        <div class="pest_list__item-wrapper">
+                            <input type="checkbox" id="check-1" name="check" checked>
+                            <label for="check-1">Warehouse Astarta 1</label>
+                        </div>
+                    </td>
+                    <td class="pest_list__table-time">
+                        <div class="pest_list__item-wrapper">
+                            12/09/2020 14:55:19
+                        </div>
+                    </td>
+                    <td>
+                        <div class="pest_list__item-wrapper pest_list__table-event">
+                            <img src="assets/images/noiz.png" alt="noiz">
+                        </div>
+                    </td>
+                    <td class="pest_list__table-video">
+                        <div class="pest_list__item-wrapper">
+                            2/2
+                        </div>
+                    </td>
+                    <td class="pest_list__table-source">
+                        <div class="pest_list__item-wrapper">
+                            Module 5
+                        </div>
+                    </td>
+                    <td>
+                        <div class="pest_list__item-wrapper pest_list__table-tag">
+                            <span>Animal</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="pest__list-item">
+                    <td class="pest__table-location">
+                        <div class="pest_list__item-wrapper">
+                            <input type="checkbox" id="check-2" name="check" checked>
+                            <label for="check-2">Warehouse Astarta 1</label>
+                        </div>
+                    </td>
+                    <td class="pest_list__table-time">
+                        <div class="pest_list__item-wrapper">
+                            12/09/2020 11:35:19
+                        </div>
+                    </td>
+                    <td>
+                        <div class="pest_list__item-wrapper pest_list__table-event">
+                            <img src="./assets/images/watter.png" alt="water">
+                        </div>
+                    </td>
+                    <td class="pest_list__table-video">
+                        <div class="pest_list__item-wrapper">
+                            2/2
+                        </div>
+                    </td>
+                    <td class="pest_list__table-source">
+                        <div class="pest_list__item-wrapper">
+                            Module 3
+                        </div>
+                    </td>
+                    <td>
+                        <div class="pest_list__item-wrapper pest_list__table-tag">
+                            <span>Insects</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="pest__list-item">
+                    <td class="pest__table-location">
+                        <div class="pest_list__item-wrapper">
+                            <input type="checkbox" id="check-3" name="check" checked>
+                            <label for="check-3">Warehouse Astarta 1</label>
+                        </div>
+                    </td>
+                    <td class="pest_list__table-time">
+                        <div class="pest_list__item-wrapper">
+                            12/09/2020 10:15:13
+                        </div>
+                    </td>
+                    <td>
+                        <div class="pest_list__item-wrapper pest_list__table-event">
+                            <img src="./assets/images/term.png" alt="term">
+                        </div>
+                    </td>
+                    <td class="pest_list__table-video">
+                        <div class="pest_list__item-wrapper">
+                            2/2
+                        </div>
+                    </td>
+                    <td class="pest_list__table-source">
+                        <div class="pest_list__item-wrapper">
+                            Module 11
+                        </div>
+                    </td>
+                    <td>
+                        <div class="pest_list__item-wrapper pest_list__table-tag">
+                            <span>Animal</span>
+                            <span>Human</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="pest__list-item">
+                    <td class="pest__table-location">
+                        <div class="pest_list__item-wrapper">
+                            <input type="checkbox" id="check-4" name="check" checked>
+                            <label for="check-4">Warehouse Astarta 1</label>
+                        </div>
+                    </td>
+                    <td class="pest_list__table-time">
+                        <div class="pest_list__item-wrapper">
+                            12/09/2020 10:14:10
+                        </div>
+                    </td>
+                    <td>
+                        <div class="pest_list__item-wrapper pest_list__table-event">
+                            <img src="./assets/images/fire.png" alt="fire">
+                        </div>
+                    </td>
+                    <td class="pest_list__table-video">
+                        <div class="pest_list__item-wrapper">
+                            2/2
+                        </div>
+                    </td>
+                    <td class="pest_list__table-source">
+                        <div class="pest_list__item-wrapper">
+                            Module 2
+                        </div>
+                    </td>
+                    <td>
+                        <div class="pest_list__item-wrapper pest_list__table-tag">
+                            <span class="fire">Fire</span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer_toolbar">
+            <div class="page_switcher">
+                <span class="page_switcher__text">Page</span>
+                <span class="page_switcher_arrow-left">
+                    <img src="assets/images/left-arrow.png" alt="arrow-left">
+                </span>
+                <div class="page_switcher__page-numbers">
+                    <span class="page_switcher__number">1</span>
+                    <span class="page_switcher__number">2</span>
+                    <span class="page_switcher__number">3</span>
+                    <span class="page_switcher__number">...</span>
+                    <span class="page_switcher__number">1276</span>
+                </div>
+                <span class="page_switcher_arrow-right">
+                    <img src="assets/images/right-arrow.png" alt="arrow-right">
+                </span>
+            </div>
+            <div class="export_button_wrapper">
+                <span class="export_button">Export</span>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/index.js"></script>
 </body>
 </html>
